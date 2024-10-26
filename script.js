@@ -104,3 +104,21 @@ console.log(person);
 // >= is greater than or equal to
 // != is not equal to
 // !== is not equal to
+// && is and
+// || is or
+// ! is not
+// + is addition
+// - is subtraction
+// * is multiplication
+// / is division
+// % is modulus
+// ** is exponentiation
+// = is assignment
+// += is addition assignment
+// -= is subtraction assignment
+// *= is multiplication assignment
+// /= is division assignment
+// %= is modulus assignment
+// **= is exponentiation assignment
+
+
