@@ -78,24 +78,6 @@ console.log(person);
 //     console.log("false")
 // }
 
-// for (let i = 0; i < 10; i++) { this will run the code 10 times
-//     console.log(i) this will print 0, 1, 2, 3, 4, 5, 6, 7, 8, 9
-// }
-
-// for (let i = 0; i < 10; i++) { this will run the code 10 times
-//     if (i == 5) { 
-//         break - this will stop the loop
-//     }
-//     console.log(i) this will print 0, 1, 2, 3, 4
-// }
-
-// for (let i = 0; i < 10; i++) { this will run the code 10 times
-//     if (i == 5) { this will stop the loop
-//         continue  - this will skip the loop
-//     }
-//     console.log(i) this will print 0, 1, 2, 3, 4
-// }
-
 // == are values on both side the same even if different data types
 // === are values on both side the same & the same data type
 // < is less than
@@ -122,3 +104,108 @@ console.log(person);
 // **= is exponentiation assignment
 
 
+// else statements:
+let password = "password123";
+let submittedPassword = "password1";
+
+if (password == submittedPassword) {
+    console.log("User submitted the correct password");
+} else {
+    console.log("User submitted the wrong password");
+}
+
+// else if statements:
+let newPassword = "Password123";
+
+if (newPassword[0] != newPassword.toUpperCase()[0]) {
+    console.log("Password must start with an uppercase letter");
+} else if (newPassword.toLowerCase().includes("password")) {
+    console.log("Password should not use an easy to guess word");
+} else {
+    console.log("Password accepted");
+}
+
+// switch statements:
+let day = "sunday";
+
+switch (day) {
+    case "monday":
+        console.log("Monday");
+        break;
+    case "tuesday":
+        console.log("Tuesday");
+        break;  
+    case "wednesday":
+        console.log("Wednesday");    
+        break;
+    case "thursday":    
+        console.log("Thursday");
+        break;  
+    case "friday":
+        console.log("Friday");  
+        break;          
+    case "saturday":
+        console.log("Saturday");
+        break;  
+    case "sunday":
+        console.log("Sunday");  
+        break;
+    default:
+        console.log("Invalid day");
+}
+
+
+// for loops:
+
+// for (let i = 0; i < 10; i++) { this will run the code 10 times
+//     console.log(i) this will print 0, 1, 2, 3, 4, 5, 6, 7, 8, 9
+// }
+
+// for (let i = 0; i < 10; i++) { this will run the code 10 times
+//     if (i == 5) { 
+//         break - this will stop the loop
+//     }
+//     console.log(i) this will print 0, 1, 2, 3, 4
+// }
+
+// for (let i = 0; i < 10; i++) { this will run the code 10 times
+//     if (i == 5) { this will stop the loop
+//         continue  - this will skip the loop
+//     }
+//     console.log(i) this will print 0, 1, 2, 3, 4
+// }
+
+// var storedPassword = "password123";
+
+// for (let attemptsRemaining = 5; attemptsRemaining > 0;) {
+//     let userInput = prompt("Enter your password");
+//     if (userInput == storedPassword) {
+//         console.log("Password accepted");
+//         break;
+//     } else {
+//         attemptsRemaining--;
+//         console.log("Incorrect password, you have " + attemptsRemaining + " attempts remaining");
+//     }
+// }
+// the above code will check for a password and give you 5 attempts
+
+// while loops:
+let olympicMedals = 0;
+
+while (olympicMedals < 5) {
+    olympicMedals++;
+    console.log("You have won " + olympicMedals + " olympic medals");
+}
+
+console.log("You have 5, thats enough for one day!");
+
+// for each loops:
+let rainbowColours = ["red", "orange", "yellow", "green", "blue", "indigo", "violet"];
+
+rainbowColours.forEach(colour => {
+    console.log(`This fancy colour ${colour} is in the rainbow!`);
+});
+
+// forEach vs map:
+// forEach runs an operation and has access to a specific index
+// map runs an operation and returns a new array
